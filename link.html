@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Link's</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    body {
+      margin: 0px;
+    }
+
+    div {
+      margin-left: 20px
+    }
+  </style>
+
+</head>
+
+<body>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li class="dropdown">
+      <a class="dropbtn">Computer Science</a>
+      <div class="dropdown-content">
+        <a href="3AcS.html">Three Amazing Use Cases</a>
+        <a href="problem.html">Three Technical/Ethical/Social</a>
+        <a href="future.html">The Future Development</a>
+      </div>
+    </li>
+    <li><a href="cv.html">CV</a></li>
+    <li style="background-color:red;"><a href="link.html">Links</a></li>
+    <li><a href="contact.html">Conctact</a></li>
+    <li style="float:right;"><a href="login.html">Login</a></li>
+  </ul>
+  <div>
+    <h1>Link's</h1>
+    <a href="https://vuejs.org/v2/guide/#What-is-Vue-js">Vue</a><br>
+    <a href="https://www.w3schools.com">W3schools</a><br>
+    <a href="https://interactivepython.org/courselib/static/pythonds/Introduction/WhatIsComputerScience.html">Problem
+      Solving with Computer Science</a><br>
+    <a
+      href="https://digi117.com/blog/six-real-world-problems-that-can-be-solved-immediately-with-iot.html0">Problems</a>
+  </div>
+</body>
+
+</html>

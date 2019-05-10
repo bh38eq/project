@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html style="overflow:hidden;">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            margin-right: 0px;
+            overflow: hidden;
+
+        }
+
+        /* Style the tab */
+        .tab {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 30%;
+            height: 1100px;
+        }
+
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 666px;
+            overflow: auto;
+        }
+
+        .icenter {
+            width: auto;
+            height: auto;
+            background-color: #777;
+            margin: auto;
+            display: block;
+        }
+
+        p {
+            text-align: justify;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown" style="background-color: red;">
+            <a class="dropbtn">Computer Science</a>
+            <div class="dropdown-content">
+                <a href="3AcS.html">Three Amazing Use Cases</a>
+                <a href="problem.html">Three Technical/Ethical/Social</a>
+                <a href="future.html">The Future Development</a>
+            </div>
+        </li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="link.html">Links</a></li>
+        <li><a href="contact.html">Conctact</a></li>
+        <li style="float:right;"><a href="login.html">Login</a></li>
+    </ul>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'ML')" id="defaultOpen">Machine Learning</button>
+        <button class="tablinks" onclick="openCity(event, 'DL')">Deep Learning</button>
+        <button class="tablinks" onclick="openCity(event, 'AI')">A.I</button>
+    </div>
+
+    <div id="ML" class="tabcontent" style="margin-left:auto;margin-right:auto;display:block;overflow: auto;">
+        <h3 style="text-align:center;">Machine Learning</h3>
+        <img src="../assets/ML.png" style="  display: block;margin-left: auto;margin-right: auto;">
+        <p>Machine learning refers to the process by which computers develop pattern recognition or the ability to
+            continuously learn from the data, or make predictions based on them, and then make adjustments without being
+            specifically programmed for it.
+        </p>
+
+        <iframe width="720" height="630" class="icenter" src="https://www.youtube.com/embed/f_uwKZIAeM0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>
+            A form of artificial intelligence, machine learning effectively automates
+            the process of building analytical models and allows machines to adapt to new scenarios independently.
+        </p>
+        <audio controls preload="none">
+            <source src="../assets/music.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div id="DL" class="tabcontent">
+        <h3 style="text-align:center;">Deep Learning</h3>
+        <img src="../assets/computer-science3.jpg" style="  display: block;margin-left: auto;margin-right: auto;">
+
+        <p>is an emerging topic within the field of Artificial Intelligence. A sub-category of machine learning that
+            addresses deep learning opportunities with the use of neural networks to improve things, such as speech
+            recognition, computer vision, and natural language processing.
+        </p>
+        <p>
+            This is fast becoming one of the most studied
+            and sought after fields within the modern computer science.
+        </p>
+        <iframe class="icenter" width="560" height="315" src="https://www.youtube.com/embed/P2HPcj8lRJE" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div id="AI" class="tabcontent">
+        <h3 style="text-align:center;">A.I</h3>
+        <img src="../assets/ai.png" style="  display: block;margin-left: auto;margin-right: auto;">
+        <p>Machine learning is also a concept with several possible definitions. Here is one that allows us to
+            assimilate its essence: machine learning is a system that can modify its behavior autonomously based on its
+            own experience - the training we discussed earlier. The human interference here is minimal.</p>
+        <iframe class="icenter" width="560" height="315" src="https://www.youtube.com/embed/mJeNghZXtMo" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>
