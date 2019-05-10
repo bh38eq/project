@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .mySlides {
+            display: none;
+        }
+
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 980px
+        }
+
+        .section {
+            margin-top: 16px !important;
+            margin-bottom: 16px !important;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content section" style="max-width:500px">
+        <img class="mySlides" src="../assets/computer-science3.png" style="width:100%">
+        <img class="mySlides" src="../assets/computer-science6.jpg" style="width:100%">
+        <img class="mySlides" src="../assets/computer-science7.jpg" style="width:100%">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
